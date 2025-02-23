@@ -55,18 +55,18 @@ const FirstSection = () => {
             <div className="flex flex-col items-center justify-center min-h-screen text-white text-center px-4">
                 {/* Title */}
                 <h1 className="tracking-wider">
-                    <span className="font-got text-4xl sm:text-9xl md:text-7xl lg:text-8xl xl:text-8xl">THRON LANG</span>
+                    <span className="font-got select-none text-4xl sm:text-9xl md:text-7xl lg:text-8xl xl:text-8xl">THRON LANG</span>
                 </h1>
 
                 {/* Subtitle */}
-                <p className="mt-2 text-lg tracking-wide text-xs md:text-lg lg:text-2xl  xl:text-2xl text-gray-300 font-cinzel">
+                <p className="mt-2 select-none tracking-[.15em] text-xs md:text-lg lg:text-2xl  xl:text-2xl text-gray-300 font-cinzel">
                     A LANGUAGE FOR THE REALM OF IMAGINATION
                 </p>
 
                 {/* Buttons */}
                 <div className="mt-6 flex gap-4">
-                    <PlayButton>
-                        <div style={{ position: 'relative' }}>
+                    <PlayButton href='#editor-id'>
+                        <div style={{ position: 'relative' }} >
                             Let's Play
                             <div
                                 className="underline"
@@ -114,7 +114,7 @@ const FirstSection = () => {
 
 
                 {/* Footer */}
-                <p className="mt-6 font-light tracking-wide text-wrap text-sm text-gray-400/80
+                <span className="mt-6 font-light tracking-wide text-wrap text-xs md:text-sm text-gray-400/80
       flex items-center justify-center gap-1.5
       font-mono">
                     CREATED AND DEVELOPED BY
@@ -132,7 +132,7 @@ const FirstSection = () => {
           group-hover:w-full" />
                     </a>&
                     <a
-                        href="https://github.com/JayeshVegda/"
+                        href="https://github.com/jay08-09"
                         target="_blank"
                         className="relative inline-flex items-center font-medium text-gray-300
           transition-colors duration-300
@@ -145,7 +145,7 @@ const FirstSection = () => {
           group-hover:w-full" />
                     </a>
 
-                </p>
+                </span>
 
             </div>
             {/* <div className="flex justify-center items-center mb-8">

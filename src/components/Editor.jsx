@@ -127,47 +127,51 @@ function Editor() {
   };
 
   return (
-    <div className="editor-container">
-      <MonacoEditor
-        width="70%"
-        height="80%"
-        language="customLang"
-        theme="customTheme"
-        value={code}
-        onChange={(newCode) => setCode(newCode)}
-        options={options}
-        editorDidMount={editorDidMount}
-      />
-      <PrimaryButton
-        className="submit-button"
-        color="primary"
-        size="large"
-        onClick={handleSubmit}
-         >
-        Submit
-      </PrimaryButton>
+    <>
+      <div className="editor-container" id="editor-id">
 
-      {output && (
-        <Box
-          className="output-container"
-          sx={{
-            marginTop: "20px",
-            width: "70%",
-            padding: "15px",
-            backgroundColor: "#1e1e1e",
-            color: "#d4d4d4",
-            borderRadius: "8px",
-            fontSize: "14px",
-            overflow: "auto",
-            maxHeight: "300px",
-            boxShadow: "0 4px 8px rgba(0, 0, 0, 0.2)",
-          }}
+        <MonacoEditor
+          width="70%"
+          height="80%"
+          language="customLang"
+          theme="customTheme"
+          value={code}
+          onChange={(newCode) => setCode(newCode)}
+          options={options}
+          editorDidMount={editorDidMount}
+        />
+
+        <PrimaryButton
+          className="submit-button"
+          color="primary"
+          size="large"
+          onClick={handleSubmit}
         >
-          <strong>Output:</strong>
-          <pre style={{ whiteSpace: "pre-wrap" }}>{output}</pre>
-        </Box>
-      )}
-    </div>
+          Submit
+        </PrimaryButton>
+        {output && (
+          <Box
+            className="output-container"
+            sx={{
+              marginTop: "20px",
+              width: "70%",
+              padding: "15px",
+              backgroundColor: "#1e1e1e",
+              color: "#d4d4d4",
+              borderRadius: "8px",
+              fontSize: "14px",
+              overflow: "auto",
+              maxHeight: "300px",
+              boxShadow: "0 4px 8px rgba(0, 0, 0, 0.2)",
+            }}
+          >
+            <strong>Output:</strong>
+            <pre style={{ whiteSpace: "pre-wrap" }}>{output}</pre>
+          </Box>
+        )}
+      </div>
+    </>
+
   );
 }
 

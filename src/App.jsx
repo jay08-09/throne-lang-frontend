@@ -1,5 +1,6 @@
 import './App.css'
 import FirstSection from './pages/FirstSection'
+import DocumentationSection from './pages/DocumentationSection'
 
 function App() {
   return(
@@ -9,6 +10,7 @@ function App() {
     </div>
       <Editor /> */}
       <FirstSection />
+      <DocumentationSection />
     </>
   )
 }
