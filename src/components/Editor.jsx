@@ -90,7 +90,7 @@ function Editor() {
       const viewState = editorRef.current.saveViewState();
       const content = editorRef.current.getValue();
       localStorage.setItem(STORAGE_KEY, JSON.stringify({ content, viewState }));
-      console.log("State Saved:", { content, viewState });
+      // console.log("State Saved:", { content, viewState });
     }
   };
 

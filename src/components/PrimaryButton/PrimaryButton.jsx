@@ -1,7 +1,7 @@
 import { Button, styled } from '@mui/material'
 
 export const PrimaryButton = styled(Button)(({ theme }) => ({
-    background: 'linear-gradient(to right, #1D2671, #C33764)',
+    background: '#007fd4',
     color: 'white',
     borderRadius: '8px',
     boxShadow: theme.shadows[3],
@@ -28,8 +28,9 @@ export const PrimaryButton = styled(Button)(({ theme }) => ({
     fontWeight: 600,
 
     '&:hover': {
-        background: 'linear-gradient(to right, #1D2671, #C33764)',
+        background: 'white',
         transform: 'scale(1.05)',
+        color: 'black',
         boxShadow: theme.shadows[5],
         filter: 'brightness(1.1)',
         '& .icon': {
