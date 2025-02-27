@@ -151,22 +151,10 @@ function Editor() {
         </PrimaryButton>
         {output && (
           <Box
-            className="output-container"
-            sx={{
-              marginTop: "20px",
-              width: "70%",
-              padding: "15px",
-              backgroundColor: "#1e1e1e",
-              color: "#d4d4d4",
-              borderRadius: "8px",
-              fontSize: "14px",
-              overflow: "auto",
-              maxHeight: "300px",
-              boxShadow: "0 4px 8px rgba(0, 0, 0, 0.2)",
-            }}
+            className="output-container mt-5 w-[70%] p-4 bg-[#1e1e1e] text-[#d4d4d4] rounded-md text-sm shadow-lg max-h-[300px] overflow-auto"
           >
             <strong>Output:</strong>
-            <pre style={{ whiteSpace: "pre-wrap" }}>{output}</pre>
+            <pre >{output}</pre>
           </Box>
         )}
       </div>
