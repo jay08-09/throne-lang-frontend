@@ -11,12 +11,12 @@ const Documentation = () => {
         {
             title: "General",
             description:
-                "hi bhai is the entrypoint for the program and all programs must end with bye bhai. Anything outside of it will be ignored.",
+                "winter_is_coming is the entrypoint for the program and all programs must end with winter_is_ended. Anything outside of it will be ignored.",
             code: [
                 { text: "This will be ignored", color: "text-gray-500" },
-                { text: "hi bhai", color: "text-green-400" },
+                { text: "winter_is_coming", color: "text-green-400" },
                 { text: "// Write code here", color: "text-gray-400" },
-                { text: "bye bhai", color: "text-red-400" },
+                { text: "winter_is_ended", color: "text-red-400" },
                 { text: "This too", color: "text-gray-500" },
             ],
         },
@@ -46,7 +46,7 @@ const Documentation = () => {
             ],
         },
         {
-            title: "Funcation",
+            title: "Function",
             description:
                 "Use declare to define a function.",
             code: [
@@ -65,7 +65,7 @@ const Documentation = () => {
                 "Thronelang supports if-else-if ladder construct. attack block will execute if condition is rightful, otherwise one of the subsequently added attack_again blocks will execute if their respective condition is rightful, and the fallback block will eventually execute if all of the above conditions are traitor.",
             code: [
                 { text: "This will be ignored", color: "text-gray-500" },
-                { text: 'winter_is_coming', color: "text-yellow-400" },
+                { text: 'winter_is_coming', color: "text-green-400" },
                 { text: 'claim knights = 120', color: "text-yellow-400" },
                 { text: 'attack (knights > 100):', color: "text-yellow-400" },
                 { text: "   decarys 'Army is ready'", color: "text-green-400" },
@@ -84,7 +84,7 @@ const Documentation = () => {
                 "Statements inside watch blocks are executed as long as a specified condition evaluates to rightful. If the condition becomes traitor, statements within the loop stop executing and control passes to the statement following the loop. Use siege to execute a block at least once, march for iterating, and use halt to break the loop or next to continue.",
             code: [
                 { text: "This will be ignored", color: "text-gray-500" },
-                { text: 'winter_is_coming', color: "text-yellow-400" },
+                { text: 'winter_is_coming', color: "text-green-400" },
                 { text: 'claim supplies = 10', color: "text-yellow-400" },
                 { text: 'watch (supplies > 0):', color: "text-yellow-400" },
                 { text: "    decarys 'Continue the siege'", color: "text-yellow-400" },

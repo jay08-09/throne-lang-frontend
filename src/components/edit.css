@@ -8,7 +8,8 @@
     align-items: center;
     gap: 20px; /* Space between editor and button */
     padding: 20px;
-    /* height: 100vh; */
+    height: auto; /* Adjust height for better responsiveness */
+    min-height: 100vh;
     box-sizing: border-box;
   }
 
