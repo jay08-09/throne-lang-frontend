@@ -23,59 +23,73 @@ const Documentation = () => {
         {
             title: "Variables",
             description:
-                "Variables can be declared using bhai ye hai.",
+                "Variables can be declared using claim",
             code: [
-                { text: "hi bhai", color: "text-green-400" },
-                { text: 'bhai ye hai a = 10;', color: "text-yellow-400" },
-                { text: 'bhai ye hai b = "two";', color: "text-yellow-400" },
-                { text: "bye bhai", color: "text-red-400" },
+                { text: "This will be ignored", color: "text-gray-500" },
+                { text: "winter_is_coming", color: "text-green-400" },
+                { text: 'claim warriors = 500;', color: "text-yellow-400" },
+                { text: 'claim castle_name = "Winterfell";', color: "text-yellow-400" },
+                { text: "winter_is_ended", color: "text-red-400" },
             ],
         },
         {
             title: "Types",
             description:
-                "Numbers and strings are like other languages. Null values can be denoted using nalla. sahi and galat are the boolean values.",
+                "Numbers and strings are like other languages. Null values can be denoted using void. true and false are the boolean values",
             code: [
-                { text: "hi bhai", color: "text-green-400" },
-                { text: 'hi bhai', color: "text-yellow-400" },
-                { text: '// Write code here', color: "text-yellow-400" },
-                { text: "bye bhai", color: "text-red-400" },
-                { text: "This too", color: "text-gray-500" },
+                { text: "This will be ignored", color: "text-gray-500" },
+                { text: "winter_is_coming", color: "text-green-400" },
+                {text: 'claim warriors = 500;', color: "text-yellow-400" },
+                {text: 'claim coin = 50.40;', color: "text-yellow-400" },
+                {text: 'claim is_war_ready = rightful;', color: "text-yellow-400" },
+                { text: "winter_is_ended", color: "text-red-400" },
             ],
         },
         {
-            title: "Built-ins",
+            title: "Funcation",
             description:
-                "Use bol bhai to print anything to console.",
+                "Use declare to define a function.",
             code: [
-                { text: "hi bhai", color: "text-green-400" },
-                { text: 'hi bhai', color: "text-yellow-400" },
-                { text: '// Write code here', color: "text-yellow-400" },
-                { text: "bye bhai", color: "text-red-400" },
+                { text: "This will be ignored", color: "text-gray-500" },
+                { text: 'declare summon_army(soldiers):', color: "text-yellow-400" },
+                { text: '    attack (soldiers > 1000):', color: "text-yellow-400" },
+                { text: '        send rightful', color: "text-yellow-400" },
+                { text: '    send traitor', color: "text-yellow-400" },
+                { text: "winter_is_ended", color: "text-red-400" },
                 { text: "This too", color: "text-gray-500" },
             ],
         },
         {
             title: "Conditionals",
             description:
-                "Bhailang supports if-else-if ladder construct , agar bhai block will execute if condition is sahi, otherwise one of the subsequently added nahi to bhai blocks will execute if their respective condition is sahi, and the warna bhai block will eventually execute if all of the above conditions are galat.",
+                "Thronelang supports if-else-if ladder construct. attack block will execute if condition is rightful, otherwise one of the subsequently added attack_again blocks will execute if their respective condition is rightful, and the fallback block will eventually execute if all of the above conditions are traitor.",
             code: [
-                { text: "hi bhai", color: "text-green-400" },
-                { text: 'hi bhai', color: "text-yellow-400" },
-                { text: '// Write code here', color: "text-yellow-400" },
-                { text: "bye bhai", color: "text-red-400" },
-                { text: "This too", color: "text-gray-500" },
+                { text: "This will be ignored", color: "text-gray-500" },
+                { text: 'winter_is_coming', color: "text-yellow-400" },
+                { text: 'claim knights = 120', color: "text-yellow-400" },
+                { text: 'attack (knights > 100):', color: "text-yellow-400" },
+                { text: "   decarys 'Army is ready'", color: "text-green-400" },
+                { text: "attack_again (knights > 50):", color: "text-yellow-400" },
+                { text: "   decarys 'Army is forming'", color: "text-green-400" },
+                { text: "attack_again (knights > 50):", color: "text-yellow-400" },
+                { text: "fallback:", color: "text-yellow-400" },
+                { text: "   decarys 'Gather more forces'", color: "text-green-400" },
+                { text: "winter_is_ended", color: "text-red-400" },
+                { text: "This too", color: "text-gray-500" },                             
             ],
         },
         {
             title: "Loops",
             description:
-                "Statements inside jab tak bhai blocks are executed as long as a specified condition evaluates to sahi. If the condition becomes galat, statement within the loop stops executing and control passes to the statement following the loop. Use bas kar bhai to break the loop and agla dekh bhai to continue within loop.",
+                "Statements inside watch blocks are executed as long as a specified condition evaluates to rightful. If the condition becomes traitor, statements within the loop stop executing and control passes to the statement following the loop. Use siege to execute a block at least once, march for iterating, and use halt to break the loop or next to continue.",
             code: [
-                { text: "hi bhai", color: "text-green-400" },
-                { text: 'hi bhai', color: "text-yellow-400" },
-                { text: '// Write code here', color: "text-yellow-400" },
-                { text: "bye bhai", color: "text-red-400" },
+                { text: "This will be ignored", color: "text-gray-500" },
+                { text: 'winter_is_coming', color: "text-yellow-400" },
+                { text: 'claim supplies = 10', color: "text-yellow-400" },
+                { text: 'watch (supplies > 0):', color: "text-yellow-400" },
+                { text: "    decarys 'Continue the siege'", color: "text-yellow-400" },
+                { text: "    supplies = supplies - 1", color: "text-yellow-400" },
+                { text: "winter_is_ended", color: "text-red-400" },
                 { text: "This too", color: "text-gray-500" },
             ],
         },
@@ -110,8 +124,9 @@ const Documentation = () => {
                                 {copiedIndex === index ? "Copied" : "Copy"}
                             </button>
                             {section.code.map((line, idx) => (
-                                <p key={idx} className={line.color}>{line.text}</p>
-                            ))}
+                            <pre key={idx} className={`${line.color} whitespace-pre-wrap`}>{line.text}</pre>
+))}
+
                         </div>
                     </div>
                 ))}
