@@ -126,6 +126,7 @@ const Documentation = () => {
                             {section.code.map((line, idx) => (
                             <pre key={idx} className={`${line.color} whitespace-pre-wrap`}>{line.text}</pre>
 ))}
+
                         </div>
                     </div>
                 ))}
